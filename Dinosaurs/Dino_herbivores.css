@@ -1,0 +1,223 @@
+@media only screen and (min-width: 992px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .scroll-container {
+        position: relative;
+        align-items: center;
+        justify-content: space-evenly;  
+        left: 0;
+        right: 0; 
+        z-index: 1; 
+    }
+    .top-bar, .bottom-bar {
+        position: relative;
+        background-color: green;
+    }
+    .top-bar {
+        height: 170px; 
+        top: 0;
+        z-index: 1; 
+    }
+    .title {
+        font-size: 110px;
+        font-weight: bold;
+        color: yellow;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-top: 0;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .subtitle {
+        font-weight: bold;
+        color: white;
+        font-size: 28px;
+        margin-top: 0;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .back-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 3px solid black;
+        border-radius: 10px;
+        cursor: url("cursor_image.png"), pointer;
+    }
+    .back-button:hover, .carnivores-button:hover {
+        background-color: darkred;
+    }
+    .carnivores-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 3px solid black;
+        border-radius: 10px;
+        cursor: url("cursor_image.png"), pointer;
+    }
+    .bottom-bar {
+        margin-top: 50px;
+        height: 20px;
+        position: relative;
+        bottom: 0;
+        z-index: 1; 
+    }
+    .bottitle {
+        font-size: 15px;
+        margin-top: 0;
+        text-align: center;
+    }
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        overflow: hidden;
+        background: url("home_image.png") no-repeat center center;
+        background-size: cover;
+        filter: blur(10px) brightness(0.7);
+        z-index: -2; 
+    }
+    .white-block {
+        position: fixed;
+        top: 0;
+        left: 15%;
+        right: 15%;
+        height: 100%;
+        background-size: cover;
+        background-color: white;
+        z-index: -1;
+    }
+    .image-herbivore {
+        width: 870px;
+        height: 500px;
+        background-size: cover; 
+        color: white;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        background-image: url("herbivores_top_image.png");
+    }
+    .info-herbivore {
+        width: 870px;
+        color: black;
+        text-align: left;
+        font-size: 20px;
+    }
+    .short-info, .species{
+        color: black;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bolder;
+        margin-top: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px; 
+    }
+    .button-row {
+        display: flex;
+        gap: 40px;    
+    }
+    .action-button {
+        width: 263.3px;
+        height: 351px;
+        background-size: cover; 
+        background-position: center; 
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        cursor: url("cursor_image.png"), pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+    }
+    .action-button::after {
+        content: '';
+        display: flex;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 18%;
+        background: white;
+        z-index: 1;
+    }
+    .action-button:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    .dino-name {
+        position: absolute;
+        bottom: 35px;
+        left: 10px;
+        width: 100%;
+        color: black;
+        text-align: left;
+        z-index: 2;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .learn-more {
+        position: absolute;
+        bottom: 10px;
+        left: 12px;
+        width: 100%;
+        color: black;
+        text-align: left;
+        z-index: 2;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .background-triceratops {
+        background-image: url("triceratops_image.png");
+    }
+    .background-stegosaurus {
+        background-image: url("stegosaurus_image1.png");
+    }
+    .background-parasaurolophus {
+        background-image: url("parasaurolophus_image.png");
+    }
+    .background-pachycephalosaurus {
+        background-image: url("pachycephalosaurus_image.png");
+    }
+    .background-iguanodon {
+        background-image: url("iguanodon_image.png");
+    }
+    .background-dracorex {
+        background-image: url("dracorex_image.png");
+    }
+    .background-brachiosaurus {
+        background-image: url("brachiosaurus_image.png");
+    }
+    .background-apatosaurus {
+        background-image: url("apatosaurus_image1.png");
+    }
+    .background-ankylosaurus {
+        background-image: url("ankylosaurus_image.png");
+        
+    }
+    
+    
+}
