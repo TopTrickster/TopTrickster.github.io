@@ -1,0 +1,37 @@
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+    margin-top: 50px;
+}
+#btnContainer {
+    text-align: center;
+    
+}
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+#decreaseBtn {
+    background-color: red;
+}
+#decreaseBtn:hover {
+    background-color: darkred;
+}
+#resetBtn {
+    background-color: blue;
+}
+#resetBtn {
+    background-color: darkblue;
+}
+#increaseBtn {
+    background-color: green;
+}
+#increaseBtn:hover {
+    background-color: darkgreen;
+}

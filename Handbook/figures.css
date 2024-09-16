@@ -1,0 +1,166 @@
+
+/* Heart */
+#heart{
+    margin-left: 5px;
+    width: 50px;
+    height: 80px;
+    position: relative;
+}
+#heart::before, #heart::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    
+}
+#heart::before{
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    
+}
+#heart::after{
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* Square */
+#square{
+    content: "";
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: red;
+}
+
+/* Rhombus */
+#rhombus{
+    content: "";
+    margin: 20px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    position: relative;
+    rotate: -45deg;
+}
+
+/* Circle */
+#circle{
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Half-circle */
+#half-circle{
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+}
+#half-circle::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(211, 156, 177);
+}
+
+/* Moon */
+#moon{
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: rgb(211, 156, 177); 
+    border-radius: 50%;
+    box-shadow: -15px 15px 0 0 red;
+    
+}
+    
+/* Curved line */ 
+#curved_line{
+    margin-left: 10px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: clear;
+    border: 2px solid red;
+    border-radius: 50%;
+    position: relative;
+}
+#curved_line::before{
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 42px;
+    left: -2px;
+    top: 42px;
+    bottom: 0px;
+    background-color: rgb(211, 156, 177);
+}
+
+/* Rectangle */
+#rectangle{
+    margin-left: 10px;
+    width: 100px;
+    position: relative;
+    aspect-ratio: 2/1;
+    background-color: red;
+}
+
+/* Oval */
+#oval{
+    margin-left: 10px;
+    width: 100px;
+    position: relative;
+    aspect-ratio: 2/1;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Rhomboid */
+#rhomboid{
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    transform: skewX(-20deg);
+}
+
+/* Triangle */
+#triangle{
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-bottom: 80px solid red; 
+}
+
+/* Cone */
+#cone{
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-bottom: 100px solid red;
+    border-radius: 50%;
+}
+
