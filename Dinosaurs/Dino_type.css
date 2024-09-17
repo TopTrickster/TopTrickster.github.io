@@ -168,7 +168,7 @@
         z-index: 2; 
     }
     
-    .button-row:hover .action-button {
+    .button-row .action-button {
         transform: scale(0.9); 
         opacity: 0.6; 
     }
